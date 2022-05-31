@@ -1,0 +1,35 @@
+.footer a:not(.btn) {
+  color: #a7a7a7;
+}
+.footer_top.dark{
+  background-color: black !important;
+}
+
+@media (max-width: 576px){
+  section.banner .content{
+    text-align: center;
+  }
+  section.banner .content h1{
+    font-size: 30px;
+  }
+
+  .header-top .navbar-nav.list-inline{
+    display: none;
+  }
+
+  nav.header-top .link{
+    margin-left: auto;
+  }
+
+  footer {
+    border-top: none;
+  }
+
+  footer .col-auto {
+    -ms-flex: 0 0 auto;
+    width: 100%; 
+    text-align: center;
+  }
+
+}
+
