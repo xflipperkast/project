@@ -42,3 +42,23 @@ a:hover{
 body{
     background-color: black;
 }
+
+#intro{
+    margin-top: 1000px;
+}
+.wrapper{
+    position: absolute;
+    top: 200px;
+    color: #a0e193;
+}
+#items{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+}
+
+#items{
+    display: grid;
+    grid-template-rows: 5vh 5vh;
+}
