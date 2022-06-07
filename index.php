@@ -8,7 +8,7 @@
 <body>
   <h1>inloggen</h1>
   <nav>
-    <img id="logo" src="img/logo.jp g" alt="logo">
+    <img id="logo" src="img/logo.png" alt="logo">
     <article>
       <a href="#" class="nav">Home</a>
       <a href="#" class="nav">Producten</a>
