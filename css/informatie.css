@@ -45,3 +45,12 @@ a:hover{
 body{
     background-color: black;
 }
+
+.product-info {
+    align-items: center;
+}
+
+.title {
+    color: white;
+    float: right;
+}
