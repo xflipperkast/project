@@ -1,5 +1,6 @@
 .navbar-nav{
     width: 100%;
+    font-size: 40px;
 }
 
 @media(min-width:568px){
@@ -18,14 +19,11 @@
     padding-bottom: 1px;
     text-align: center;
     width: 100%;
-    background-color: #ecb21f;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 13px; 
+    color: #a0e193!important;
 }
-
+li:hover{
+    text-decoration: underline #a0e193;
+}
 #profile{
     background-color: unset;
     
