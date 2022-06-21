@@ -1,9 +1,10 @@
 <?php 
 if (isset($_POST['submit'])){
-    include 'config.php';
+    require('config.php');
 
     $username = $_POST['username'];
     $password = $_POST['password'];
+    $permission = $_POST['permission'];
 
     $sql = "INSERT INTO gebruikers (username, password)
     VALUES ('$username', '$password')";
@@ -22,7 +23,7 @@ if (isset($_POST['loginsubmit'])){
     if (!empty($_POST['username']) && !empty($_POST['pass'])){
         $username = $_POST['username'];
         $password = $_POST['pass'];
-        $sql = "SELECT * FROM gebruikers WHERE username = '".$username."' AND `password` = '".$password."'";
+        $sql = "SELECT * FROM gebruikers WHERE username = '".$username."' AND `password` = '".$password."'"; 
         if($result = $conn->query($sql)) {
 
             $aantal = $result->num_rows;
@@ -30,7 +31,8 @@ if (isset($_POST['loginsubmit'])){
                 session_start();
                 $_SESSION['ingelogd'] = true;
                 $_SESSION['username'] = $username;
-                header("Location: index.php");
+                $_SESSION['password'] = $password;
+                header("Location: home.php");
             }else{
                 $error = "gegevens onjuist";
             }
