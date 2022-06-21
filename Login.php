@@ -1,19 +1,19 @@
 <?php 
+if (isset($_POST['submit'])){
+    include 'config.php';
 
-include 'config.php';
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-$username = $_POST['username'];
-$password = $_POST['password'];
-
-$sql = "INSERT INTO gebruikers (username, password)
-VALUES ('$username', '$password')";
-$result = mysqli_query($conn, $sql);
-if ($result) {
-echo "<script>alert('met succes toegevoegt.')</script>";
-} else {
-echo "<script>alert('niet toegevoegt')</script>";
+    $sql = "INSERT INTO gebruikers (username, password)
+    VALUES ('$username', '$password')";
+    $result = mysqli_query($conn, $sql);
+    if ($result) {
+        echo "<script>alert('met succes toegevoegt.')</script>";
+    } else {
+        echo "<script>alert('niet toegevoegt')</script>";
+    }
 }
-
 
 ?>
 <html>
@@ -39,7 +39,7 @@ echo "<script>alert('niet toegevoegt')</script>";
 <label>Wachtwoord</label>
 <input type="password" name="pass" class="form-control" required>
 </div>
-<button type="submit" class="btn btn-primary"> Login </button>
+<input name="loginsubmit" type="submit" class="btn btn-primary">
 </form>
 </div>
 

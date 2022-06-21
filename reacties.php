@@ -7,13 +7,13 @@
 
 include 'config.php';
 
-error_reporting(0); // For not showing any error
+error_reporting(0); 
 
-if (isset($_POST['submit'])) { // Check press or not Post reactie Button
-	$name = $_POST['name']; // Get Name from form
-	$email = $_POST['email']; // Get Email from form
-	$reactie = $_POST['reactie']; // Get reactie from form
-	$eventnaam = $_POST['eventnaam']; // Get reactie from form
+if (isset($_POST['submit'])) { 
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$reactie = $_POST['reactie'];
+	$eventnaam = $_POST['eventnaam'];
 
 
 	$sql = "INSERT INTO comments (name, email, reactie, eventnaam)
