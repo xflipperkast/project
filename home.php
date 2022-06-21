@@ -25,10 +25,10 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-sm-5 col-md-6 col-12 pb-4">
-            <img src="img/blikjes.png">
+            <div class="col-sm-4 col-md-4">
+            <img class="ani" src="img/blikjes.png">
             </div>
-            <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
+            <div class="col-lg-5 col-md-7 col-sm-4 offset-md-1 col-14 mt-4">
             <h1>Welkom</h1>
        <p class="texts">Green dragon is de nieuwste en sterkste energie drink van deze tijd met 
         ons nieuwe recept is onze energie niet alleen powerfull maar ook laag in 
