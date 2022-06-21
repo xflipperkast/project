@@ -1,20 +1,17 @@
 <?php 
 
-session_start();
-if(isset($_POST['submit'])){
+include 'config.php';
 
-require("dbconnect.php");
+$username = $_POST['username'];
+$password = $_POST['password'];
 
-$name = $_POST['user'];
-$pass = $_POST['password'];
-
-$s = "INSERT INTO gebruikers (username, `password`, permission) VALUES (".$name.", ".$pass.", 1)";
-
-if($result = $conn->query($s) ){
-    echo "gelukt";
-}else{
-    echo "fail";
-}
+$sql = "INSERT INTO gebruikers (username, password)
+VALUES ('$username', '$password')";
+$result = mysqli_query($conn, $sql);
+if ($result) {
+echo "<script>alert('met succes toegevoegt.')</script>";
+} else {
+echo "<script>alert('niet toegevoegt')</script>";
 }
 
 
@@ -51,7 +48,7 @@ if($result = $conn->query($s) ){
 <form method="POST">
 <div class="form-group">
 <label>Gebruikersnaam</label>
-<input type="text" name="user" class="form-control" required>
+<input type="text" name="username" class="form-control" required>
 </div>
 <div class="form-group">
 <label>Wachtwoord</label>
