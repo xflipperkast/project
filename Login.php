@@ -1,9 +1,10 @@
 <?php 
-
-include 'config.php';
-
 $username = $_POST['username'];
 $password = $_POST['password'];
+include 'config.php';
+error_reporting(0); // For not showing any error
+
+
 
 $sql = "INSERT INTO gebruikers (username, password)
 VALUES ('$username', '$password')";
