@@ -146,7 +146,7 @@ form{
     width: 40vw !important;
   }
   .ani {
-    animation: MoveUpDown 1.2s linear infinite;
+    animation: MoveUpDown 0.0001s linear infinite;
     position: absolute;
     left: 0;
     bottom: -200;
@@ -157,6 +157,6 @@ form{
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-100px);
+      transform: translateY(-300px);
     }
   }
