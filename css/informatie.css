@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+article {
+    word-spacing: 4rem;
+    text-align: center;
+}
+
+#inloggen{
+    color: white;
+    float: right;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px 25px 5px 25px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+nav{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+#logo{
+    width: 20%;
+}
+#nav{
+    display: flex;
+    column-gap: 40px;
+
+}
+.nav{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline #a0e193;
+}
+body{
+    background-color: black;
+}
+
+.product-info {
+    align-items: center;
+}
+
+.title {
+    color: white;
+    float: right;
+}

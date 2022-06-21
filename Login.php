@@ -1,3 +1,24 @@
+<?php 
+
+session_start();
+if(isset($_POST['submit'])){
+
+require("dbconnect.php");
+
+$name = $_POST['user'];
+$pass = $_POST['password'];
+
+$s = "INSERT INTO gebruikers (username, `password`, permission) VALUES (".$name.", ".$pass.", 1)";
+
+if($result = $conn->query($s) ){
+    echo "gelukt";
+}else{
+    echo "fail";
+}
+}
+
+
+?>
 <html>
 <head>
     <title>User Login And Registration</title>
@@ -15,11 +36,11 @@
 <form action="validation.php" method="post">
 <div class="form-group">
 <label>Gebruikersnaam</label>
-<input type="text" name="user" class="form-control" required>
+<input type="text" name="username" class="form-control" required>
 </div>
 <div class="form-group">
 <label>Wachtwoord</label>
-<input type="password" name="password" class="form-control" required>
+<input type="password" name="pass" class="form-control" required>
 </div>
 <button type="submit" class="btn btn-primary"> Login </button>
 </form>
@@ -27,7 +48,7 @@
 
 <div class="col-md-6 login-right">
 <h2> Registreren </h2>
-<form action="registration.php" method="post">
+<form method="POST">
 <div class="form-group">
 <label>Gebruikersnaam</label>
 <input type="text" name="user" class="form-control" required>
@@ -36,7 +57,7 @@
 <label>Wachtwoord</label>
 <input type="password" name="password" class="form-control" required>
 </div>
-<button type="submit" class="btn btn-primary"> Registreer </button>
+<input type="submit" name="submit" class="btn btn-primary">
 </form>
 </div>
 
