@@ -15,6 +15,33 @@ if (isset($_POST['submit'])){
     }
 }
 
+$error = "";
+if (isset($_POST['loginsubmit'])){
+    require('config.php');
+
+    if (!empty($_POST['username']) && !empty($_POST['pass'])){
+        $username = $_POST['username'];
+        $password = $_POST['pass'];
+        $sql = "SELECT * FROM gebruikers WHERE username = '".$username."' AND `password` = '".$password."'";
+        if($result = $conn->query($sql)) {
+
+            $aantal = $result->num_rows;
+            if($aantal == 1) {
+                session_start();
+                $_SESSION['ingelogd'] = true;
+                $_SESSION['username'] = $username;
+                header("Location: index.php");
+            }else{
+                $error = "gegevens onjuist";
+            }
+        }
+
+        
+    } else {
+        $error = "Username & password zijn verplicht";
+    }
+}
+
 ?>
 <html>
 <head>
@@ -30,7 +57,7 @@ if (isset($_POST['submit'])){
 <div class="row">
 <div class="col-md-6 login-left">
 <h2> Login </h2>
-<form action="validation.php" method="post">
+<form method="POST">
 <div class="form-group">
 <label>Gebruikersnaam</label>
 <input type="text" name="username" class="form-control" required>
@@ -39,7 +66,7 @@ if (isset($_POST['submit'])){
 <label>Wachtwoord</label>
 <input type="password" name="pass" class="form-control" required>
 </div>
-<input name="loginsubmit" type="submit" class="btn btn-primary">
+<input name="loginsubmit" type="submit" class="btn btn-primary" value="inloggen">
 </form>
 </div>
 
