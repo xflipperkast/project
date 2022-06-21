@@ -7,13 +7,13 @@
 
 include 'config.php';
 
-error_reporting(0); 
+error_reporting(0); // For not showing any error
 
-if (isset($_POST['submit'])) { 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$reactie = $_POST['reactie'];
-	$eventnaam = $_POST['eventnaam'];
+if (isset($_POST['submit'])) { // Check press or not Post reactie Button
+	$name = $_POST['name']; // Get Name from form
+	$email = $_POST['email']; // Get Email from form
+	$reactie = $_POST['reactie']; // Get reactie from form
+	$eventnaam = $_POST['eventnaam']; // Get reactie from form
 
 
 	$sql = "INSERT INTO comments (name, email, reactie, eventnaam)
@@ -27,7 +27,6 @@ if (isset($_POST['submit'])) {
 }
 
 ?>
-
 
 
 <link href="css/comments.css" rel="stylesheet" type="text/css">
@@ -49,10 +48,64 @@ if (isset($_POST['submit'])) {
     </div>    
 </nav>
 <!-- Main Body -->
+<div class="row justify-content-center">
+    <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Rotterdam Bluegrass Festival</p>
+           </div>
+           <img src="img/ev1.jpg" class="Cardimage">
+            <div class="card-body">
+            <p class="card-text">Na een succesvolle online editie kijken we er enorm naar uit om al onze vrienden weer in het echt te ontmoeten. En dus 2022 here we come! Van 24 t/m 26 juni gaan we het 10-jarig jubileum extra groot vieren met een XL editie: meer podia, meer jamsessies, meer jonge talenten, meer cross-overs, meer bars, meer eettentjes, meer bier en meer Rotterdam Noord! En niet te vergeten meer Bluegrass van zowel nationale als internationale artiesten. Waarvan we de eerste headliners met trots bekend kunnen maken:</p>
+        </div>
+    </div>
+    </div>
+    <div class="pb-4 col-12 col-sm-4">
+        <div class="card">
+        <div class="card-body">
+            <p class="card-text">LatinVillage Festival</p>
+        </div>
+        <img src="img/ev2.jpg" alt="Card image">
+        <div class="card-body">
+            <p class="card-text">LatinVillage Festival is een tweedaags festival dat elk derde weekend van augustus wordt gehouden op recreatiegebied Spaarnwoude. LatinVillage biedt een gemoedelijke sfeer en een breed en divers scala aan artiesten en pakt graag uit met entertainment en acts. De muziekstijl varieert van House tot reggaeton. LatinVillage Festival bestaat al meer dan 16 jaar, inmiddels is het festival uitgegroeid tot één van Europa’s grootste latin festivals met ruim 50.000 bezoekers per jaar. Wegens het grote succes breidde LatinVillage in 2019 uit van een één naar een tweedaags festival.</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+        <div class="card-body">
+            <p class="card-text">Afro Latin Summer Festival</p>
+        </div>
+        <img src="img/ev3.jpg" alt="Card image">
+        <div class="card-body">
+            <p class="card-text">The biggest and most exotic festival in The Netherlands. We give you an international AFRO LATIN paradise with:
+                <br>
+                ✔️️ live on stage: Broederliefde <br>
+                ✔️️ live on stage: Djodje <br>
+                ✔️️ live on stage: William Araujo <br>
+                ✔️️ live on stage: Bonifácio Aurio <br>
+                ✔️️ live on stage: Jeny Bsg <br>
+                ✔     live on stage: Louis Moon & support acts <br>
+                ✔️️ live on stage: Team Latino <br>
+                <br>
+                ✔️ 5 Area's <br>
+                ✔️ Afro Area | Latino R&B Mix Area | Kizomba & Urbankiz Area | Bachata Area | Salsa Area <br>
+                ✔️ daily Afrobattle <br>
+                ✔️ (International) teachers for Kizomba, Urbankiz, Semba, Afrodance, Bachata, Salsa, Zumba, Tarraxinha <br>
+                ✔️ Animation and showdance <br>
+                ✔️ (international) Top DJ’s <br>
+                ✔️ Daily Afro Kids party 09:00-11:00 <br>
+                ✔️ exotic Foodtrucks and coctailbar <br>
+                ✔️ Partybus from Festival <-> Hotel</p> <br>
+        </div>
+    </div>
+    </div>
+</div>
+<br><br>
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-sm-5 col-md-6 col-12 pb-4">
+            <div class="col-sm-5 col-md-6 col-12 pb-4"</div>
                 <h1>Recenties</h1>
     			<?php 
 			
@@ -76,6 +129,7 @@ if (isset($_POST['submit'])) {
 			
 			?>
             </div>
+
             <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
                 <form id="algin-form" action="" method="POST" class="form">
                     <div class="form-group">

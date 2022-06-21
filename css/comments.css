@@ -80,6 +80,7 @@ body{
     padding-top: 10px;
     
 }
+
 .comment h4,.comment span,.darker h4,.darker span{
     display: inline;
 }
@@ -128,3 +129,10 @@ form{
     border-radius: 5px;
     padding: 20px;
  }
+.Cardimage{
+    align-content: center;
+}
+.card{
+    width: 59%;
+    left: 20%;
+}
