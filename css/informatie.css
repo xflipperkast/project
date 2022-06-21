@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+article {
+    word-spacing: 4rem;
+    text-align: center;
+}
+
 #inloggen{
     color: white;
     float: right;
@@ -33,9 +38,7 @@ nav{
     text-decoration: none;
     color: white;
 }
-#curent-page{
-    color: #a0e193;
-}
+
 a:hover{
     text-decoration: underline #a0e193;
 }
@@ -43,28 +46,11 @@ body{
     background-color: black;
 }
 
-#intro{
-    margin-top: 1000px;
-}
-.wrapper{
-    position: absolute;
-    top: 600px;
-    color: #a0e193;
-
-}
-#items{
-    width: 170px;
-    height: 170px;
-    border: 2px solid #c3c3c3;
-    display: grid;
+.product-info {
+    align-items: center;
 }
 
-#items{
-    display: grid;
-    grid-template-rows: 5vh 5vh;
-}
-.prev-comments{
-    display: grid;
-    grid-template-columns: repeat(8, 10vw);
-    margin-left: 100px;
+.title {
+    color: white;
+    float: right;
 }
