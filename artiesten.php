@@ -29,10 +29,8 @@
 
 <table>
     <tr>
-        <th>naam</th>
-        <th>achternaam</th>
-        <th>voornaam</th>
-        <th>tussenvoegsel</th>
+        <th>Artiest</th>
+        <th>Naam</th>
         <th>statement</th>
         <th>telefoon nr</th>
         <th>activiteit</th>
@@ -48,13 +46,7 @@
             echo $row['naam'];
             echo "</td>";
             echo "<td>";
-            echo $row['achternaam'];
-            echo "</td>";
-            echo "<td>";
-            echo $row['voornaam'];
-            echo "</td>";
-            echo "<td>";
-            echo $row['tussenvoegsel'];
+            echo $row['voornaam']." ".$row['tussenvoegsel']." ".$row['achternaam'];
             echo "</td>";
             echo "<td>";
             echo $row['statement'];
