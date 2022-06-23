@@ -54,6 +54,8 @@ if (isset($_POST['loginsubmit'])){
 </head>
 <body>
 
+<a href="home.php" id="terug"><- ga terug</a>
+
 <div class="container">
 <div class="login-box">
 <div class="row">

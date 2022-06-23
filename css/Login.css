@@ -23,3 +23,18 @@ body{
 .form-control{
     background-color: transparent !important;
 }
+
+
+.nav-item{
+    color: green;
+}
+
+#terug{
+    color: white;
+    float: right;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px 25px 5px 25px;
+    border: 2px solid white;
+    border-radius: 30px;
+}

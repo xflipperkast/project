@@ -49,7 +49,7 @@ li:hover{
 }
 
 body{
-    background-image: url(../img/event.jpg);
+    background-color: #232323;
 }
 
 #nav-items li a,#profile{
@@ -162,7 +162,7 @@ form{
   }
 
 table{
-    background-color: #00aa0055;
+    background-color: #ffffff55;
     position: relative;
     left: 5vw;
     width: 90vw;
@@ -171,8 +171,10 @@ table{
 
 td{
     color: #ffffff;
+    border: solid 1px #000000;
 }
 
 th{
     color: #ffffff;
+    border: solid 1px #000000;
 }
