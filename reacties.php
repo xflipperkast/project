@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) { // Check press or not Post reactie Button
         <div class="card-body">
             <p class="card-text"><?php echo $row['plaatsnaam']; ?></p>
         </div>
-        <img src="img/ev3.jpg" alt="Card image">
+        <img src="<?php echo $row['img']; ?>" alt="Card image">
         <div class="card-body">
             <p class="card-text"><?php echo $row['gebouw']; ?></p>
             <p class="card-text"><?php echo $row['max_bezoekers']; ?></p>

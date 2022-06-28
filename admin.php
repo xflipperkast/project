@@ -10,13 +10,15 @@ include 'config.php';
 error_reporting(0); // For not showing any error
 
 if (isset($_POST['submit'])) { // Check press or not Post reactie Button
-	$plaatsnaam = $_POST['plaatsnaam']; // Get Name from form
-	$gebouw = $_POST['gebouw']; // Get Email from form
+	$plaatsnaam = $_POST['plaatsnaam']; // Get plaats from form
+	$gebouw = $_POST['gebouw']; // Get gebouw from form
+    $img = $_POST['img']; // Get image from form
 
 
 
-	$sql = "INSERT INTO locaties (plaatsnaam, gebouw)
-			VALUES ('$plaatsnaam', '$gebouw')";
+
+	$sql = "INSERT INTO locaties (plaatsnaam, gebouw, img)
+			VALUES ('$plaatsnaam', '$gebouw', '$img')";
 	$result = mysqli_query($conn, $sql);
 	if ($result) {
 		echo "<script>alert(' met succes toegevoegt.')</script>";
@@ -25,6 +27,24 @@ if (isset($_POST['submit'])) { // Check press or not Post reactie Button
 	}
 }
 
+
+if (isset($_POST['submit1'])) { // Check press or not Post reactie Button
+	$naam = $_POST['naam']; // Get naam from form
+	$achternaam = $_POST['achternaam']; // Get achternaam from form
+    $voornaam = $_POST['voornaam']; // Get imagvoornaame from form
+    $tussenvoegsel = $_POST['tussenvoegsel']; // Get plaats from form
+	$statement = $_POST['statement']; // Get gebouw from form
+    $actief = $_POST['actief']; // Get image from form
+
+    $sql = "INSERT INTO artiesten (naam, achternaam, voornaam, tussenvoegsel, statement, actief)
+    VALUES ('$naam', '$achternaam', '$voornaam', '$tussenvoegsel', '$statement', '$actief')";
+$result = mysqli_query($conn, $sql);
+if ($result) {
+echo "<script>alert(' met succes toegevoegt.')</script>";
+} else {
+echo "<script>alert(' niet toegevoegt')</script>";
+}
+}
 ?>
 
 
@@ -58,14 +78,54 @@ if (isset($_POST['submit'])) { // Check press or not Post reactie Button
                     <div class="form-group">
                     <div class="form-group">
                         <label for="plaatsnaam">plaatsnaam</label>
-                        <input type="text" name="plaatsnaam" id="plaatsnaam" class="form-control" required>
+                        <input type="text" name="plaatsnaam" id="plaatsnaam" placeholder="plaatsnaam" class="form-control" required>
                     </div>
 					<div class="form-group">
                         <label for="gebouw">gebouw</label>
                         <input type="text" name="gebouw" id="gebouw" placeholder="gebouw naam "class="form-control" required>
                     </div>
                     <div class="form-group">
+                        <label for="img">image link</label>
+                        <input type="text" name="img" id="img" placeholder="image link "class="form-control" required>
+                    </div>
+                    <div class="form-group">
                         <button type="submit" name="submit" id="post" class="btn">voeg toe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
+                <form id="algin-form" action="" method="POST" class="form">
+                    <div class="form-group">
+                    <div class="form-group">
+                        <label for="naam">artiesten naam</label>
+                        <input type="text" name="naam" id="naam" placeholder="artiesten naam" class="form-control" required>
+                    </div>
+					<div class="form-group">
+                        <label for="achternaam">achternaam</label>
+                        <input type="text" name="achternaam" id="achternaam" placeholder="achternaam "class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="voornaam">voornaam</label>
+                        <input type="text" name="voornaam" id="voornaam" placeholder="voornaam" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tussenvoegsel">tussenvoegsel</label>
+                        <input type="text" name="tussenvoegsel" id="tussenvoegsel" placeholder="tussenvoegsel" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="statement">statement</label>
+                        <input type="text" name="statement" id="statement" placeholder="statement" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="actief">actief = 1 inactief = 0</label>
+                        <input type="text" name="actief" id="actief" placeholder="statement" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" name="submit1" id="post" class="btn">voeg toe</button>
                     </div>
                 </form>
             </div>
