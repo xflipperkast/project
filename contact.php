@@ -1,9 +1,7 @@
-<?php
- require("dbconnect.php");
-?>
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,19 +9,26 @@
     <title>Versiebeheer 2.T1 LO1E</title>
     <link href="css/contact.css" rel="stylesheet" type="text/css">
 </head>
+
+
 <body>
-<section>
-      <a href="#" id="inloggen">inloggen</a>
-    <nav>
-      <img id="logo" src="img/logo.png" alt="logo">
-        <article id="nav">
-            <a href="home.php" class="nav">Home</a>
-            <a href="#" class="nav">Producten</a>
-            <a href="#" class="nav">Evenementen</a>
-            <a href="#" class="nav" id="curent-page">Contact</a>
-        </article>
-    </nav>
-  </section>
+<nav class="navbar navbar-expand-xl navbar-dark">
+    <img src="img/logo.png" width="200" alt=""> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> 
+        <span class="navbar-toggler-icon"></span> 
+    </button>
+    <div class="end">
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav">
+              <li class="nav-item"> <a class="nav-link" href="home.php" data-abc="true">Home<span class="sr-only">(current)</span></a> </li>
+              <li class="nav-item"> <a class="nav-link" href="product.php" data-abc="true">producten</a> </li>
+              <li class="nav-item "> <a class="nav-link" href="#" data-abc="true">Evenementen</a> </li>
+              <li class="nav-item-active"> <a class="nav-link" href="#" data-abc="true" class="curent">Contact</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#" data-abc="true">inloggen</a> </li>
+            </ul>        
+        </div>
+    </div>    
+</nav>
 
   <article class="invulformulier">
    <div class="wrapper">
