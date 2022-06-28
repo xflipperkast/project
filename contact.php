@@ -1,9 +1,7 @@
-<?php
- require("dbconnect.php");
-?>
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,7 +9,10 @@
     <title>Versiebeheer 2.T1 LO1E</title>
     <link href="css/contact.css" rel="stylesheet" type="text/css">
 </head>
+
+
 <body>
+<<<<<<< HEAD
 <section>
       <a href="#" id="inloggen">inloggen</a>
     <nav>
@@ -26,6 +27,25 @@
         </article>
     </nav>
   </section>
+=======
+<nav class="navbar navbar-expand-xl navbar-dark">
+    <img src="img/logo.png" width="200" alt=""> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> 
+        <span class="navbar-toggler-icon"></span> 
+    </button>
+    <div class="end">
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav">
+              <li class="nav-item"> <a class="nav-link" href="home.php" data-abc="true">Home<span class="sr-only">(current)</span></a> </li>
+              <li class="nav-item"> <a class="nav-link" href="product.php" data-abc="true">producten</a> </li>
+              <li class="nav-item "> <a class="nav-link" href="reacties.php" data-abc="true">Evenementen</a> </li>
+              <li class="nav-item active"> <a class="nav-link mt-2"  href="#"data-abc="true" id="clicked">Contact<span class="sr-only">(current)</span></a> </li>
+              <li class="nav-item"> <a class="nav-link" href="login.php" data-abc="true">inloggen</a> </li>
+            </ul>        
+        </div>
+    </div>    
+</nav>
+>>>>>>> 21c38edb9b910862298f7fd6321f90c9f92d759c
 
   <article class="invulformulier">
    <div class="wrapper">

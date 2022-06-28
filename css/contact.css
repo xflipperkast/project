@@ -1,42 +1,44 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-#inloggen{
-    color: white;
-    float: right;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 5px 25px 5px 25px;
-    border: 2px solid white;
-    border-radius: 30px;
-}
-nav{
-    background-color: black;
-    display: grid;
-    grid-template-columns: 40vw 60vw;
-    align-items: center;
-    position: relative;
-    top: 30px;
-}
-#logo{
-    width: 20%;
-}
-#nav{
-    display: flex;
-    column-gap: 40px;
+.navbar-nav{
+	width: 100%;
+	font-size: 40px;
+  }
+  
+  @media(min-width:568px){
+	.end{
+		margin-left: auto;
+	}
+  }
+  
+  @media(max-width:768px){
+	#post{
+		width: 100%;
+	}
+  }
+  #clicked{
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+	width: 100%;
+	color: #a0e193!important;
+  }
+  li:hover{
+	text-decoration: underline #a0e193;
+  }
+  #profile{
+	background-color: unset;
+	
+  } 
+  
+  #nav-items li a,#profile{
+	text-decoration: none;
+	color: rgb(224, 219, 219);
+	background-color: black;
+  }
 
-}
-.nav{
-    font-size: 40px;
-    text-decoration: none;
-    color: white;
-}
-#curent-page{
-    color: #a0e193;
-}
-a:hover{
-    text-decoration: underline #a0e193;
+
+
+.invulformulier{
+	margin-top: 50px;
 }
 body{
     background-color: black;
