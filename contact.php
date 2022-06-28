@@ -12,22 +12,6 @@
 
 
 <body>
-<<<<<<< HEAD
-<section>
-      <a href="#" id="inloggen">inloggen</a>
-    <nav>
-      <img id="logo" src="img/logo.png" alt="logo">
-        <article id="nav">
-            <a href="home.php" class="nav">Home</a>
-            <a href="product.php" class="nav">Producten</a>
-            <a href="reacties.php" class="nav">Evenementen</a>
-            <a href="artiesten.php" class="nav">Artiesten</a>
-            <a href="contact.php" class="nav" id="curent-page">Contact</a>
-            <a href="Login.php" class="nav">Inloggen</a>
-        </article>
-    </nav>
-  </section>
-=======
 <nav class="navbar navbar-expand-xl navbar-dark">
     <img src="img/logo.png" width="200" alt=""> 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> 
@@ -45,8 +29,6 @@
         </div>
     </div>    
 </nav>
->>>>>>> 21c38edb9b910862298f7fd6321f90c9f92d759c
-
   <article class="invulformulier">
    <div class="wrapper">
          <div class="row">
