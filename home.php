@@ -13,11 +13,11 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav">
             <li class="nav-item active"> <a class="nav-link mt-2" href="home.php" data-abc="true" id="clicked">Home<span class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="product.php" data-abc="true">producten</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="product.php" data-abc="true">Producten</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="reacties.php" data-abc="true">Evenementen</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="artiesten.php" data-abc="true">Artiesten</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="contact.php" data-abc="true">Contact</a> </li>
-				<li class="nav-item"> <a class="nav-link" href="Login.php" data-abc="true">inloggen</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="Login.php" data-abc="true">Inloggen</a> </li>
             </ul>        
         </div>
     </div>    
