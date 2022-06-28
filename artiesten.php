@@ -12,11 +12,12 @@
     <div class="end">
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav">
-            <li class="nav-item active"> <a class="nav-link mt-2" href="#" data-abc="true" id="clicked">Home<span class="sr-only">(current)</span></a> </li>
+            <li class="nav-item"> <a class="nav-link" href="home.php" data-abc="true">home</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="product.php" data-abc="true">producten</a> </li>
-                <li class="nav-item "> <a class="nav-link" href="#" data-abc="true">Evenementen</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#" data-abc="true">Contact</a> </li>
-				<li class="nav-item"> <a class="nav-link" href="#" data-abc="true">inloggen</a> </li>
+                <li class="nav-item "> <a class="nav-link" href="reacti.php" data-abc="true">Evenementen</a> </li>
+                <li class="nav-item active"> <a class="nav-link mt-2" href="artiesten.php" data-abc="true" id="clicked">artiesten<span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"> <a class="nav-link" href="contact.php" data-abc="true">Contact</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="login.php" data-abc="true">inloggen</a> </li>
             </ul>        
         </div>
     </div>    
