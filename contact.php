@@ -18,9 +18,11 @@
       <img id="logo" src="img/logo.png" alt="logo">
         <article id="nav">
             <a href="home.php" class="nav">Home</a>
-            <a href="#" class="nav">Producten</a>
-            <a href="#" class="nav">Evenementen</a>
-            <a href="#" class="nav" id="curent-page">Contact</a>
+            <a href="product.php" class="nav">Producten</a>
+            <a href="reacties.php" class="nav">Evenementen</a>
+            <a href="artiesten.php" class="nav">Artiesten</a>
+            <a href="contact.php" class="nav" id="curent-page">Contact</a>
+            <a href="Login.php" class="nav">Inloggen</a>
         </article>
     </nav>
   </section>
